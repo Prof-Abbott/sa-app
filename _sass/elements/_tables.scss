@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+  margin: 0 0 $column-gutter;
+}
+
+th {
+  text-align: left;
+  font-size: $font-one;
+  border: $border;
+  color: $white;
+  background-color: $accent;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: $light-grey;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: $white;
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+  background-color: $light-grey;
+}
+
+tr:nth-child(even) td:nth-child(even) {
+  background-color: $white;
+}
+
+td, th {
+  font-size: $font-minus-one;
+  padding: $half-column-gutter/2;
+  p, label, input[type], select {
+    font-size: $font-minus-one;
+    margin-bottom: 0;
+  }
+  input[type] {
+    border: 1px solid $blue;
+    padding: remCalc(3) remCalc(5);
+  }
+}
+
+td {
+  border: 1px solid $grey;
+  text-align: left;
+}

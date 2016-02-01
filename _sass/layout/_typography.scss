@@ -1,0 +1,197 @@
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, input {
+  margin-top: 0;
+  margin-bottom: $column-gutter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+  font-weight: $font-weight-bold;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: $font-three;
+}
+
+h2 {
+  font-size: $font-two;
+}
+
+h3 {
+  font-size: $font-one;
+  margin-bottom: $half-column-gutter;
+}
+
+h4, h5, h6 {
+  font-size: $font-one;
+}
+
+p, li, ol, dl {
+  color: $text-color;
+  font-size: $font-minus-one;
+  font-family: $base-font-family;
+}
+
+menu,
+ol,
+ul {
+  padding: 0;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+}
+
+input {
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+blockquote {
+  font-size: $font-one;
+  font-style: italic;
+  margin: 0 0 $column-gutter;
+  padding: 0 $column-gutter;
+  border-left: 3px solid $blue;
+}
+
+blockquote p:first-of-type:before {
+  content: "\201C";
+}
+
+blockquote p:last-of-type:after {
+  content: "\201D";
+}
+
+blockquote cite {
+  font-style: normal;
+
+  &:before {
+    content: "\2014\2009";
+  }
+}
+
+q {
+  font-style: italic;
+}
+
+hr {
+  border: $border;
+  clear: both;
+  margin: 0 0 $column-gutter;
+  height: 0;
+}
+
+/* #Links
+  ================================================== */
+a, a:visited {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  outline: 0;
+  @include transition(color 0.2s ease-in-out);
+}
+
+a:hover, a:focus {
+  color: $link-hover-color;
+}
+
+p a, p a:visited {
+  line-height: inherit;
+  text-decoration: underline;
+}
+
+/* #Lists
+  ================================================== */
+ul, ol {
+  margin-bottom: $column-gutter;
+  margin-left: $column-gutter;
+}
+
+ul {
+  list-style: disc outside;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul.none, .none ul, ol.none {
+  list-style: none;
+  margin-left: 0;
+}
+
+ol.none li {
+  display: inline;
+}
+
+ul.square, ul.disc, ul.circle {
+  padding-left: $half-column-gutter;
+}
+
+ul.square {
+  list-style: square outside;
+}
+
+ul.circle {
+  list-style: circle outside;
+}
+
+ul.disc {
+  list-style: disc outside;
+
+  li {
+    margin-left: 0;
+  }
+}
+
+ul.none {
+  list-style: none outside;
+}
+
+ul ul, ul ol,
+ol ol, ol ul {
+  margin: 0 0 0 $column-gutter;
+}
+
+li {
+  line-height: $base-line-height;
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: $font-weight-bold;
+}
+
+dd {
+  margin-left: $column-gutter;
+}
+
+@media #{$medium-up} {
+  h1 {
+    font-size: $font-three;
+  }
+
+  h2 {
+    font-size: $font-three;
+  }
+
+  h3 {
+    font-size: $font-one;
+    margin-bottom: $column-gutter;
+  }
+
+  h4, h5, h6 {
+    font-size: $font-minus-one;
+  }
+
+}
+
+@media #{$large-up} {
+  p, li, ol, dl {
+    font-size: $font-one;
+  }
+}

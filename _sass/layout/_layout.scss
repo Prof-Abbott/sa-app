@@ -1,0 +1,288 @@
+
+.wrapper {
+  padding: $column-gutter $column-gutter 0 $column-gutter;
+}
+
+.top-banner {
+  background-color: $accent;
+}
+
+.main-header {
+  h1 {
+    float: left;
+    font-size: $font-two;
+    color: $white;
+    line-height: 1.1;
+    padding-bottom: remCalc(24);
+    margin-bottom: 0;
+    span {
+      font-weight: $font-weight-normal;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  &.full-width {
+    margin: 0;
+  }
+}
+
+.main-content {
+  h2 {
+    font-size: $font-two;
+  }
+}
+
+.full-width {
+  margin-bottom: $column-gutter;
+}
+
+.feature-box {
+  margin-bottom: $column-gutter;
+  h3 {
+    color: $white;
+    background-color: $blue;
+    padding: remCalc(6) $half-column-gutter;
+    display: block;
+  }
+  &.app {
+    background-color: $light-grey;
+    padding-bottom: $half-column-gutter;
+    border: $border;
+  }
+}
+
+.app {
+  .row {
+    margin-bottom: $half-column-gutter;
+    padding-left: $half-column-gutter;
+    padding-right: $half-column-gutter;
+    font-size: $font-minus-one;
+    .full-width {
+      margin-bottom: 0;
+    }
+    &:after {
+      clear: both;
+    }
+    input, select, textarea {
+      font-size: $font-minus-one;
+    }
+    label, span {
+      font-size: $font-minus-one;
+    }
+    &.divider {
+      padding-bottom: $column-gutter;
+      border-bottom: 1px darken($light-grey, 20%) solid;
+    }
+  }
+  table {
+    margin-bottom: 0;
+    th {
+      font-size: $font-minus-one;
+    }
+    td {
+      border: 1px solid $grey;
+    }
+    td, label {
+      font-size: $font-minus-one;
+    }
+    &.SS td, .input-no-padding td {
+      font-size: $font-minus-two;
+      padding: 0;
+    }
+    input, select {
+      width: 100% !important;
+      min-width: remCalc(45);
+      font-size: $font-minus-two;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.main-post {
+  margin-bottom: $column-gutter;
+}
+
+.section-header {
+  margin-top: -$half-column-gutter;
+  h2 {
+    color: $blue;
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
+    font-size: $font-minus-two;
+    letter-spacing: remCalc(2);
+    padding-bottom: $half-column-gutter/2;
+    margin-bottom: 0;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.intro-text {
+  font-size: $font-one;
+}
+
+p.equation {
+  margin-left: $column-gutter;
+  font-family: $alt-font-family;
+  font-size: $font-two;
+}
+
+.equation {
+  font-family: $alt-font-family;
+}
+
+.note {
+  border-top: $border;
+  border-bottom: $border;
+  background-color: $light-grey;
+  padding: $column-gutter $column-gutter 0;
+  margin-bottom: $column-gutter;
+  p {
+    font-style: italic;
+  }
+}
+
+.dataTables_wrapper {
+  margin-bottom: $column-gutter;
+}
+
+.dataTables_info {
+  margin-top: $half-column-gutter;
+}
+
+.footnote {
+  font-size: $font-minus-two;
+  margin-bottom: $half-column-gutter;
+  margin-left: $column-gutter;
+  position: relative;
+  sup {
+    float: left;
+    font-size: 100%;
+    line-height: $base-line-height;
+    position: absolute;
+    left: -$column-gutter;
+    vertical-align: baseline;
+    top: auto;
+  }
+}
+
+.float-right, .float-left {
+  font-style: italic;
+  font-size: $font-minus-two;
+  display: block;
+  margin-bottom: $column-gutter;
+}
+
+.sub-footer {
+  padding-bottom: $column-gutter;
+  .wrapper {
+    padding-top: 0;
+  }
+  p {
+    color: $blue;
+    font-size: remCalc(11);
+    margin-bottom: remCalc(8);
+  }
+  a {
+    color: $light-blue;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .wrapper {
+    width: 100%;
+    max-width: remCalc($medium);
+    margin: 0 auto;
+  }
+
+  .container {
+    @include container();
+  }
+
+  .full-width {
+    margin-bottom: $column-gutter;
+    @include span(12);
+  }
+
+  .two-thirds-column {
+    @include span(8 of 12);
+  }
+
+  .one-third-column {
+    @include span(4 of 12);
+  }
+
+  .two-columns, .three-columns {
+    @include span(12 of 12);
+  }
+
+  .four-columns {
+    @include span(6 of 12);
+  }
+
+  .six-columns {
+    @include span(4 of 12);
+  }
+
+  .main-content {
+    h2 {
+      font-size: $font-three;
+    }
+  }
+
+  .intro-text {
+    font-size: $font-two;
+  }
+
+
+  .float-right {
+    font-style: italic;
+    font-size: $font-minus-two;
+    float: right;
+    margin: 0 0 $column-gutter $half-column-gutter;
+  }
+
+  .float-left {
+    float: left;
+    margin: 0 $half-column-gutter $column-gutter 0;
+  }
+
+}
+
+@media #{$large-up} {
+  .wrapper {
+    max-width: remCalc($large);
+  }
+
+  .main-header h1 {
+    margin-bottom: 0;
+  }
+
+  .two-columns {
+    @include span(6 of 12);
+  }
+
+  .three-columns {
+    @include span(4 of 12);
+  }
+
+  .four-columns {
+    @include span(3 of 12);
+  }
+
+  .six-columns {
+    @include span(2 of 12);
+  }
+
+}
+
+@media #{$xlarge-up} {
+  .wrapper {
+    max-width: remCalc($xlarge);
+  }
+}

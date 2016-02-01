@@ -1,0 +1,24 @@
+{
+  "name": "starter-kit-html",
+  "version": "0.1.0",
+  "description": "three&me html starter kit",
+  "main": "site/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:threeandme/starter-kit-html.git"
+  },
+  "author": "Sean Cooper <sarcoma@live.co.uk>",
+  "license": "UNLICENSED",
+  "keywords": [
+    "three&me",
+    "Starter-Kit"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-watch": "~0.6.x",
+    "grunt-cssnano": "^2.0.1",
+    "grunt-newer": "^1.1.1",
+    "matchdep": "*"
+  }
+}

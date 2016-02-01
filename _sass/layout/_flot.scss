@@ -1,0 +1,21 @@
+.flot-graph {
+  margin-left: $half-column-gutter;
+  margin-right: $half-column-gutter;
+  width: 96%;
+  height: 340px;
+}
+
+.legend table {
+  width: auto;
+  margin: auto;
+
+  td {
+    border: 1px solid $light-grey;
+    padding: remCalc(2);
+    font-size: $font-minus-two;
+  }
+
+  td:nth-child(odd), td:nth-child(even), tr:nth-child(odd) {
+    background-color: $white;
+  }
+}

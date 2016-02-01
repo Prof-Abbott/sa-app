@@ -1,0 +1,8 @@
+!humans.txt
+!robots.txt
+.sass-cache
+.idea
+node_modules
+ai
+wordpress/wp-content/advanced-cache.php
+site/_inc/config.php
