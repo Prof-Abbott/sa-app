@@ -8,7 +8,7 @@
     </div>
 </div><!-- Javascript Starts Here -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="<?php echo get_url(); ?>/_/js/vendor/jquery-2.2.0.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="_/js/vendor/jquery-2.2.0.min.js"><\/script>')</script>
 <?php
 if (isset( $slider )) {
     echo '<script src="_/js/vendor/bootstrap-slider.js"></script>';

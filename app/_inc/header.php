@@ -1,5 +1,3 @@
-<?php include( 'config.php' ); ?>
-<?php include_once( 'functions.php' ); ?>
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
